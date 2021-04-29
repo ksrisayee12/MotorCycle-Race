@@ -1,3 +1,4 @@
+const startGameBtn = document.querySelector('#startGameBtn');
 var c = document.createElement("canvas");
 var ctx = c.getContext("2d");
 c.width = 1000;
@@ -92,4 +93,8 @@ function loop(){
 onkeydown = d=>k[d.key] = 1;
 onkeyup = d=>k[d.key] = 0;
 
-loop();
+// loop();
+startGameBtn.addEventListener('click',() => {
+    loop();
+    modalEl.style.display = "none"
+ })

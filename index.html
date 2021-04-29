@@ -5,10 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Motor Cycle Race</title>
 </head>
 <body>
+    <div class="fixed inset-0 flex items-center justify-center select-none" id="modalEl"><div class="bg-blue max-w-md w-full p-6 text-center">
+        <h1 class="text-1xl font-bold leading-none">Instructions : <br>Press UP arrow to move the Bike, Press DOWN arrow to slow down and brake, Press LEFT and RIGHT to tilt and WHEEL the Bike.
+            Be careful while playing. If the head of the player touches the ground he gets rolled out. Refresh the page to restart the game.<br><br>Enjoy The Game</h1><br>
+        <div>
+        <button class="bg-blue-500 text-white w-full py-3 rounded-full " id="startGameBtn">Start Game</button>
+        </div>
+    </div></div>
     <script src="sketch.js"></script>
 </body>
 </html>
